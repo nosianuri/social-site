@@ -1,5 +1,5 @@
 #header {
-    position: relative;
+    /* position: relative; */
     background: var(--dark-blue);
     /* margin-bottom: 20px; */
   }
@@ -7,7 +7,8 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    
+    margin-left: 100px;
+    margin-right: 100px;
   }
   
   .header h1 {
@@ -15,7 +16,7 @@
     line-height: 1.4;
     text-transform: uppercase;
     color: var(--color-white);
-    position: relative;
+    /* position: relative; */
     padding-bottom: 2rem;
   }
   
@@ -27,26 +28,34 @@
     font-weight: 800;
   }
   
-  h1 span:nth-child(2),
+  /* h1 span:nth-child(2),
   h1 span:nth-child(3) {
     font-weight: 100;
     font-size: 3rem;
-  }
+  } */
   
   .header h1::after {
     content: "";
-    position: absolute;
+    /* position: absolute; */
     left: 0;
     bottom: 0;
     width: 65%;
     height: 1px;
     background: var(--color-white);
   }
+
+  .header-left{
+    margin-right: 100px;
+  }
+  .header-right{
+    margin-left: 100px;
+  }
   
   .header-left p {
     margin: 3rem 0;
     color: var(--color-white);
-    width: 70%;
+    /* width: 70%; */
+    font-size: 20px;
   }
   
   .header-right img {
@@ -64,6 +73,8 @@
   @media screen and (max-width: 600px) {
     .header {
       flex-direction: column;
+      margin-left: 50px;
+      margin-right: 50px;
     }
   
     .header-left,
@@ -78,6 +89,7 @@
   
     .header-left {
       margin-bottom: 4rem;
+      
     }
   
     .header h1::after {

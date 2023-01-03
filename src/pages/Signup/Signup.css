@@ -1,0 +1,23 @@
+.contact-info input[type='text'],
+.contact-info input[type='email']{
+    width: 100%;
+    /* border: 0; */
+    /* background: #115173; */
+    height: 20px;
+    /* font-size: 16px; */
+    /* color: #fff; */
+    justify-items: center;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    
+}
+.contact-info textarea{
+    background: none;
+    box-sizing: border-box;
+    color: #000;
+    border: 1px solid rgb(183, 182, 182);
+}
+em{
+    color: red;
+}

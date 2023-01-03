@@ -1,80 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --font-family: "montserrat",sans-serif;
-  --dark-blue: #0a1930;
-  --light-blue: #1f93ff;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,600;1,700&family=Mukta:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300;400;500;600;700&family=Spinnaker&family=Unbounded:wght@200;300;400;500&display=swap');
 
-  --color-white: #fff;
-  --dark-text: #333;
-  --form-button: #2da5ff;
-  --color-grey: #eae6eb;
-  --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  /* scroll-behavior: smooth; */
+*{
+  scroll-behavior: smooth;
 }
 
 html,body{
   overflow-x: hidden;
-  font-size: 10px;
+  /* font-family: "montserrat",sans-serif; */
+  font-family: 'Spinnaker', sans-serif;
 }
 
 
-body {
-  font-family: "Poppins", sans-serif;
-}
 
-section {
-  width: 100%;
-  padding: 8rem 0;
-}
 
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
 
-/* Text styles */
-.u-text-small {
-  font-size: 1.3rem;
-  line-height: 1.4;
-  font-weight: 300;
-}
-
-.u-text-dark {
-  color: var(--dark-text);
-}
-.u-text-light {
-  color: var(--dark-text);
-}
-
-.u-text-center {
-  text-align: center;
-}
-
-/* Title */
-.u-title {
-  text-align: center;
-  margin-bottom: 4rem;
-}
-
-.u-title h2 {
-  font-size: 2.5rem;
-  font-weight: 300;
-  line-height: 1.4;
-  text-transform: uppercase;
-  color: var(--dark-text);
-  margin: 1.5rem 0;
-}
-
-.u-title p {
-  width: 50%;
-  margin: 0 auto;
-  color: var(--dark-text);
-}

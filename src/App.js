@@ -1,37 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
-// import Navbar from './components/navbar/Navbar';
-// import Header from './components/header/Header';
-// import Feature from './components/features/Feature';
-// import Download from './components/download/Download';
-// import Subscribe from './components/subscribe/Subscribe';
-// import Faq from './components/faq/Faq';
-// import Footer from './components/footer/Footer';
+import Navbar from './shared/Navbar/Navbar';
+import About from './pages/about/About';
+import { Route, Routes } from 'react-router-dom';
+import Contact from './pages/contact/Contacts';
+import Privacy from './pages/privacy/Privacy';
+import Home from './pages/home/Home';
+import NotFound from './pages/Shared/NotFound';
+import Service from './pages/Service/Service';
+import Signup from './pages/Signup/Signup';
 
-import {Navbar, Header, Feature, Download, Subscribe, Faq, Footer} from "./components";
-import Features from './components/features/Features';
-import WhatWeDo from './components/WhatWeDo/WhatWeDo';
-import Hero from './components/Hero/Hero';
-import Service from './components/Service/Service';
 
 function App() {
   return (
-    <>
-    <header className="header-bg">
-      <Navbar />
+    <div className=''>
       
-    </header>
-    {/* <WhatWeDo /> */}
-    <Hero />
-      <Header />
-      <Service />
-    <Download />
-    <Features data-aos="fade-up" />
-    <Subscribe />
-    <Faq />
-    <Footer />
-  </>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/service' element={<Service />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/privacy' element={<Privacy />} />
+        <Route path='/signup' element={<Signup />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+      
+    </div>
   );
 }
+
 
 export default App;

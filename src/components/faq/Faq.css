@@ -1,21 +1,54 @@
-.faq h2{
-    font-size: 4rem;
-    font-weight: 800;
+.faq h2 {
+    font-size: 3rem;
+    /* font-weight: 800; */
 }
+
 .faq p {
     font-size: 2rem;
 }
+/* .u-title {
+    text-align: center;
+    margin-bottom: 4rem;
+  } */
 
-@media screen and (max-width: 600px) {
-    .faq h2{
+.faq {
+    width: 100%;
+  /* padding: 8rem 0; */
+    text-align: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    /* padding: 20px 20px; */
+}
+
+@media screen and (max-width: 990px) {
+    .faq h2 {
         font-size: 2.5rem;
     }
-    .faq p{
+
+    .faq p {
         font-size: 15px;
         text-align: center;
     }
-    .faq{
+
+    .faq {
         text-align: center;
-        padding: 0 30px;
+        padding: 30px 30px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .faq h2 {
+        font-size: 2.5rem;
+    }
+
+    .faq p {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .faq {
+        text-align: center;
+        padding: 30px 30px;
     }
 }

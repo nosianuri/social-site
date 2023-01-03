@@ -10,19 +10,19 @@ const Question = ({ title, answer }) => {
   };
 
   return (
-    <div className="container question">
+    <div className="question">
       <div className="question-title">
-        <h4>{title}</h4>
+        <h4 className={`${showAnswer ? "!text-[#FD5D14]" : "!text-[#12232E]"}`}>{title}</h4>
         <button className="question-icons" onClick={handleClick}>
           {showAnswer ? (
-            <AiOutlineMinus color="red" />
+            <AiOutlineMinus color="#FD5D14" />
           ) : (
-            <AiOutlinePlus color="#1f93ff" />
+            <AiOutlinePlus color="#006778" />
           )}
         </button>
       </div>
       <div className="question-answer">
-        {showAnswer && <p className="u-text-small">{answer}</p>}
+        {showAnswer && <p className="px-5 text-[#12232E]">{answer}</p>}
       </div>
     </div>
   );
