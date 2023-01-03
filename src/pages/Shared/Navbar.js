@@ -13,6 +13,7 @@ const Navbar = () => {
           <label tabindex="0" class="btn btn-ghost lg:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
           </label>
+
           <ul tabindex="0" class="menu menu-compact text-white dropdown-content mt-3 p-2 shadow bg-[#003144] rounded-box w-52">
             <li className='hover:bg-[#FD5D14]' style={({ isActive }) => ({
               color: isActive ? 'greenyellow' : 'white'
@@ -34,6 +35,7 @@ const Navbar = () => {
                 Media
                 <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
               </a>
+
               <ul class="p-2">
                 <li className='hover:bg-[#FD5D14]'><a>Blog</a></li>
                 <li className='hover:bg-[#FD5D14]'><a>Event</a></li>
@@ -43,9 +45,11 @@ const Navbar = () => {
 
           </ul>
         </div>
+
         <a href='/' class="">
           <img src={logo} alt="" />
         </a>
+        
       </div>
       <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal text-white">

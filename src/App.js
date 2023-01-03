@@ -1,5 +1,4 @@
 import './App.css';
-import Navbar from './shared/Navbar/Navbar';
 import About from './pages/about/About';
 import { Route, Routes } from 'react-router-dom';
 import Contact from './pages/contact/Contacts';
